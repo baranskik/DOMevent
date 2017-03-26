@@ -1,5 +1,4 @@
 // plik scripts.js
-
 var buttonText = document.getElementsByClassName('button');
 var j = (buttonText.length);
 for (var k = 0; k < j; k++) {
