@@ -1,9 +1,8 @@
-// plik scripts.js
-var buttonText = document.getElementsByClassName('button');
-var j = (buttonText.length);
-for (var k = 0; k < j; k++) {
-  alert('wartoœæ buttonText.innerText to: ' + buttonText[k].innerText);
-  console.log('wartoœæ k teraz to: ' + k + ' z '+ j);
-  console.log('wartoœæ buttonText.innerText to: ' + buttonText[k].innerText);
-  console.log(buttonText);
-}
+
+var list = document.getElementById('list');
+var button = document.getElementById('addElem');
+button.addEventListener('click', function() {
+  var x = list.getElementsByTagName('LI');
+  var itemNumber = x.length;
+  list.innerHTML += '<li>item ' + itemNumber + '</li'
+});
